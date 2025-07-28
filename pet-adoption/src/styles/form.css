@@ -1,0 +1,92 @@
+.parentDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* vertical */
+    background-size: cover;
+}
+
+.formDiv {
+    display: grid;
+    place-items: center;
+    margin-top: 25px;
+    background-color: rgba(202, 164, 134, 0.85);
+    /* ✅ Transparent background only */
+    width: 500px;
+    height: 600px;
+    backdrop-filter: blur(6px);
+    /* smooth out background behind form */
+    border-radius: 4px;
+
+}
+
+.innerDiv {
+    /* background-color: aqua; */
+    width: 450px;
+    height: 500px;
+}
+
+.innerDiv form select {
+    padding: 7px;
+}
+
+.innerDiv form input {
+    padding: 10px;
+}
+
+/* 
+.innerDiv form input:valid {
+    background-color: blue;
+}
+
+.innerDiv form input:invalid {
+    background-color: orange;
+} */
+
+.innerDiv form label {
+    color: #006400;
+    font-weight: 500;
+    margin-left: 0;
+    font-size: 16px;
+}
+
+.innerDiv form>* {
+    /* margin: 9px 9px 9px 0px; */
+    width: 98%;
+    height: 38px;
+    box-sizing: border-box;
+    padding: 5px 8px 5px 0px;
+    font-size: 14px;
+    font-weight: normal;
+    color: grey;
+}
+
+.innerDiv form button {
+    background-color: rgba(0, 128, 0, 1);
+    /* fully opaque green */
+    color: white;
+    border: 0;
+    margin-top: 15px;
+    opacity: 1.0;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.innerDiv form .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.innerDiv form .error {
+    height: 15px;
+    color: red;
+    font-size: 14px;
+    margin-top: 0px;
+    font-style: italic;
+    font-weight: bold;
+}
